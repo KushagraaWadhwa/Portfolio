@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kushagra- Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,500&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            border: none;
+            outline: none;
+            scroll-behavior: smooth;
+
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-left: 0px;
+            height: 100px;
+            background-color: rgb(23, 23, 49);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            position: relative;
+        }
+
+        nav ul li a::after{
+            content: '';
+            width: 0;
+            height: 3px;
+            background: #fff;
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            transition: 0.5s;
+        }
+
+        nav ul li a:hover::after{
+            width: 100%;
+
+        }
+
+        nav ul li a:hover,
+        .nav a.active {
+            
+            color: rgb(183, 183, 248);
+        }
+
+        main hr {
+            border: 0;
+            background-color: rgb(128, 82, 201);
+            height: 1.2px;
+            margin: 20px 50px;
+
+        }
+
+        .left {
+            font-size: 2rem;
+        }
+
+        .left:hover {
+            font-size: 2.1rem;
+            cursor: pointer;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 90px;
+            align-items: center;
+        }
+
+        .firstSection>div {
+            width: 35%;
+        }
+
+        .leftSection {
+            justify-content: space-around;
+            margin: 35px 50px;
+            width: 75px;
+            font-size: 2.05rem;
+
+        }
+
+        .leftSection .buttons {
+            padding: 10px;
+        }
+
+        .leftSection .btn {
+            background-color: rgb(69, 69, 110);
+            color: aliceblue;
+            border: 2px solid whitesmoke;
+            padding: 10px;
+            margin: 5px;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+
+        }
+
+        .rightSection img {
+            width: 80%;
+            height: 80%;
+            margin: 10px 30px 30px 30px;
+        }
+
+        .text-grey {
+            color: gray;
+        }
+
+        .purple {
+            font-size: 2.25rem;
+            color: rgb(163, 98, 224);
+        }
+
+        #element {
+            color: rgb(165, 165, 255);
+        }
+
+        .secondSection {
+            max-width: 69vw;
+            margin: auto;
+            height: 95vh;
+        }
+
+        .secondSection .vertical {
+            height: 80px;
+            width: 1px;
+            color: rgb(176, 209, 239);
+
+        }
+
+        footer {
+            background-color: rgb(23, 23, 49);
+
+
+        }
+
+        .footer {
+            display: flex;
+            padding: 10px;
+            margin: 10px 50px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer>div {
+            width: 143px;
+        }
+
+        .footer-rights {
+            text-align: center;
+            color: rgba(219, 219, 219, 0.696);
+            padding: 10px 0px;
+
+        }
+
+        .container @media screen and (max-widht:200px) {
+            body {}
+
+            .box {
+                flex-direction: column;
+            }
+
+            .secondSection .vertical {
+                height: unset;
+            }
+
+            footer {
+                display: none;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Kushagra's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+                <li><a href="/" class="active">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Education</a></li>
+                <li><a href="/">Skills</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">Hi! My name is <span class="purple">Kushagra
+                    Wadhwa</span>
+                <div>and I am a passionate</div>
+
+                <span id="element"></span>
+                <br>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+
+                </div>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png">
+            </div>
+        </section>
+        <hr>
+        <section class="container" id="services">
+            <h1 class="sub-title">My <span>Services</span></h1>
+            <div class="services-list">
+                <div>
+                    <h2>Service 1</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ratione dolorem, sunt sequi rerum
+                        nesciunt
+                        dolorum harum, adipisci ea libero laborum quos quia quam maiores repudiandae dignissimos quis
+                        consectetur
+                        perspiciatis!</p>
+                </div>
+                <div>
+                    <h2>Service 2</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ratione dolorem, sunt sequi rerum
+                        nesciunt
+                        dolorum harum, adipisci ea libero laborum quos quia quam maiores repudiandae dignissimos quis
+                        consectetur
+                        perspiciatis!</p>
+                </div>
+                <div>
+                    <h2>Service 3</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit ratione dolorem, sunt sequi rerum
+                        nesciunt
+                        dolorum harum, adipisci ea libero laborum quos quia quam maiores repudiandae dignissimos quis
+                        consectetur
+                        perspiciatis!</p>
+                </div>
+            </div>
+        </section>
+        <section class="secondSection">
+            <span class="text-grey">What I have done so far</span>
+            <h2>Work Experience</h2>
+            <div class="box" style="background-color: aliceblue;
+                    width: 75vw;height: 2px;margin: 50px 0;">
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="flex">
+            <div class="footer">
+                <div class="footer-first">
+                    <h3>Kushagra's Developer Portfolio</h3>
+                </div>
+                <div class="footer-second"></div>
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+                <div class="footer-third"></div>
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+                <div class="footer-fourth"></div>
+                <ul>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                    <li>Home</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-rights"> Copyright &#169 kushagraportfolio.com | All rights reserved ®</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer...', 'AI-ML Engineer...', 'Data Scientist...', 'Research Enthusiast...', '&amp; Python Developer.'],
+            typeSpeed: 50,
+            loop: true
+        });
+    </script>
+</body>
+
+</html>
