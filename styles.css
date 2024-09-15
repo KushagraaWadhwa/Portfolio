@@ -177,83 +177,120 @@ footer {
 
 }
 .aboutSection {
-padding: 50px 50px;
-background-color: rgb(23, 23, 49);
-color: aliceblue;
-text-align: center;
+    padding: 100px 80px; /* Increase the padding */
+    background-color: rgb(23, 23, 49);
+    color: aliceblue;
+    text-align: center;
 }
 
 .aboutSection h2 {
-font-size: 2.5rem;
-color: rgb(163, 98, 224);
-margin-bottom: 20px;
+    font-size: 2.5rem; /* Increase the heading size */
+    color: rgb(163, 98, 224);
+    margin-bottom: 30px; /* Add more space between the heading and paragraph */
 }
 
 .aboutSection p {
-font-size: 1.2rem;
-line-height: 1.6;
-margin: 0 auto;
-width: 75%;
-color: rgba(219, 219, 219, 0.85);
+    font-size: 1.5rem; /* Increase paragraph font size */
+    line-height: 1.8;  /* Increase line height for better readability */
+    margin: 0 auto;
+    width: 85%; /* Increase the width to expand the paragraph */
+    color: rgba(219, 219, 219, 0.85);
 }
+
 
 /* Experience Section */
 .experienceSection {
-padding: 50px 50px;
-background-color: rgb(0, 0, 33);
-color: aliceblue;
-text-align: center;
+    padding: 20px 50px;
+    background-color: rgb(0, 0, 33);
+    color: aliceblue;
+    text-align: center;
 }
 
 .experienceSection h2 {
-font-size: 2.5rem;
-color: rgb(163, 98, 224);
-margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: rgb(163, 98, 224);
+    margin-top: 0; /* Remove any top margin */
+  
 }
 
+/* Experience Grid */
+.experienceGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Individual Experience Item */
 .experienceItem {
-margin-bottom: 30px;
+    background-color: rgb(23, 23, 49);
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: aliceblue;
 }
 
 .experienceItem h3 {
-font-size: 1.8rem;
-margin-bottom: 5px;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #a362e0;
 }
 
 .experienceItem p {
-font-size: 1.1rem;
-color: rgba(219, 219, 219, 0.85);
+    font-size: 1.1rem;
+    color: rgba(219, 219, 219, 0.85);
+    margin-bottom: 10px;
 }
+
+/* Hover Effect for Experience Item */
+.experienceItem:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
 
 /* Skills Section */
 .skillsSection {
-padding: 50px 50px;
-background-color: rgb(23, 23, 49);
-color: aliceblue;
-text-align: center;
+    padding: 50px 50px;
+    background-color: rgb(23, 23, 49);
+    color: aliceblue;
+    text-align: center;
 }
 
 .skillsSection h2 {
-font-size: 2.5rem;
-color: rgb(163, 98, 224);
-margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: rgb(163, 98, 224);
+    margin-bottom: 20px;
 }
 
 .skillsList {
-display: inline-block;
-list-style: none;
-padding: 0;
+    display: inline-block;
+    list-style: none;
+    padding: 0;
 }
 
 .skillsList li {
-font-size: 1.2rem;
-margin: 10px;
-padding: 10px;
-background-color: rgb(69, 69, 110);
-border-radius: 8px;
-display: inline-block;
-color: aliceblue;
+    font-size: 1.2rem;
+    margin: 10px;
+    padding: 10px 20px; /* Adjust padding for better appearance */
+    background-color: rgb(69, 69, 110);
+    border-radius: 8px;
+    display: inline-block;
+    color: aliceblue;
+    transition: all 0.3s ease; /* Smooth transition */
+    cursor: pointer; /* Indicate that the skill is interactive */
 }
+
+/* Hover effect */
+.skillsList li:hover {
+    background-color: rgb(163, 98, 224); /* Change background color on hover */
+    color: #ffffff; /* Text color change */
+    transform: scale(1.1); /* Slight scaling */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
 
 /* Projects Section */
 .projectGrid {
@@ -265,16 +302,20 @@ color: aliceblue;
 }
 
 .projectItem {
-    background-color: #0c0110;
+    background-color: rgb(69, 69, 110);
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     flex-direction: column; 
     justify-content: space-between;
+    cursor: pointer;
 }
 
 .projectItem:hover {
+    background-color: rgb(163, 98, 224);
+    color: #ffffff;
+    transform: scale(1.1);
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -335,7 +376,7 @@ color: rgba(219, 219, 219, 0.85);
 }
 
 #contact h2 {
-    font-size: 36px;
+    font-size: 2.5rem;
     color: rgb(163, 98, 224);
     font-weight: bold;
     position: relative;
@@ -382,4 +423,10 @@ color: rgba(219, 219, 219, 0.85);
     font-size: 16px;
     margin-top: 10px;
 }
+
+.contact-item a {
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
 
