@@ -10,5 +10,6 @@ Welcome to my Portfolio project! This repository contains the code and assets fo
 
 - **Email:** wadhwakushagra263@gmail.com
 - **LinkedIn:** https://www.linkedin.com/in/kushagra-wadhwa-864319229/
+- **Portfolio Link:** https://kushagraawadhwa.github.io/Portfolio/
 
 Feel free to reach out if you have any questions or just want to connect!
